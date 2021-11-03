@@ -1,0 +1,30 @@
+#solicitando o input de uma das opções
+opcao = int(input('Digite sua opção (1/2/3/4): '))
+
+#solicitando o input dos números
+x = float(input('Digite o primeiro número: '))
+y = float(input('Digite o segundo número: '))
+
+#se a opção for 1, executar a lambda de soma
+if opcao == 1:
+    num = lambda x , y : x + y
+    print(num(x,y))
+
+#se a opção for 2, executar a lambda de subtração
+elif opcao == 2:
+    num = lambda x , y : x - y
+    print(num(x,y))
+
+#se a opção for 3, executar a lambda de multiplicação    
+elif opcao == 3:
+    num = lambda x , y : x * y
+    print(num(x,y))
+
+#se a opção for 4, executar a lambda de divisão
+elif opcao == 4:
+    num = lambda x , y : x / y
+    print(num(x,y))
+
+#se for uma opção que não existe(1/2/3/4) indica que é uma opção inválida
+else:
+    print("Opção inválida!")
